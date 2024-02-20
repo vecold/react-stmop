@@ -8,8 +8,8 @@ useStompClient({
 });
 
 # stomp 中的API
-deactivate 断开消息通道
-activate 激活消息通道
 subscribe 订阅消息
 unsubscribe 取消订阅
+deactivate 断开消息通道
+activate 激活消息通道
 send 发送消息

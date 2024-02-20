@@ -53,22 +53,6 @@ const stompInfo = new Proxy(
   }
 );
 
-export function resetMap() {
-  subscriptionMap.clear();
-  subscriptionCallbackMap.clear();
-  subscriptionFailedMap.clear();
-}
-
-export function deactivate() {
-  resetMap();
-  stompClient?.deactivate();
-  stompClient = undefined;
-}
-
-export function activate() {
-  stompClient?.activate();
-}
-
 const stompSubscribe = (destination: string) => {
   const subscription = stompClient?.subscribe(destination, (message: any) => {
     let payload: any;
@@ -246,3 +230,19 @@ export const send = warpFuncWithConnectLogic((props: { message?: string; destina
     body: message,
   });
 });
+
+export function resetMap() {
+  subscriptionMap.clear();
+  subscriptionCallbackMap.clear();
+  subscriptionFailedMap.clear();
+}
+
+export function deactivate() {
+  resetMap();
+  stompClient?.deactivate();
+  stompClient = undefined;
+}
+
+export function activate() {
+  stompClient?.activate();
+}
