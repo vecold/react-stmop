@@ -1,5 +1,5 @@
 {
-  "name": "react-stomp",
+  "name": "react-websocket-stomp",
   "public": true,
   "version": "0.0.1",
   "type": "module",

@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: path.resolve(__dirname, "src/stompClient.ts"),
-      name: "reactStomp",
+      name: "reactWebsocketStomp",
       fileName: "index",
     },
   },
