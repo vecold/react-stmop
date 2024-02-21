@@ -13,3 +13,6 @@ unsubscribe 取消订阅
 deactivate 断开消息通道
 activate 激活消息通道
 send 发送消息
+
+# 具体文档
+https://v36o5101ee.feishu.cn/docx/MFlmdZgK2oRhdyxIXfTcOLRxnue?from=from_copylink
