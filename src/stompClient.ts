@@ -9,10 +9,10 @@ import {
   StompSubscription,
 } from "@stomp/stompjs";
 import { isEmpty } from "lodash";
-import { message as antdMessage } from "antd";
+// import { message as antdMessage } from "antd";
 import React from "react";
 
-const { warning } = antdMessage;
+// const { warning } = antdMessage;
 const decoder = new TextDecoder("utf-8");
 let webSocketUrl = '';
 type funcProps = {
@@ -126,7 +126,7 @@ const getStompConfig = ({
     try {
       const obj = JSON.parse(message);
       if (obj?.code === "401") {
-        warning("用户信息失效，请重新登录");
+        console.error("用户信息失效，请重新登录");
         // 可以做一些跳转到主页等逻辑
         // getInSigninPageWithLastRouteMsg();
       }

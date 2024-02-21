@@ -1,7 +1,7 @@
 {
   "name": "react-websocket-stomp",
   "public": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "license": "MIT",
   "module": "dist/index.js",
@@ -16,9 +16,7 @@
   },
   "dependencies": {
     "@stomp/stompjs": "^7.0.0",
-    "antd": "^5.14.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.202",
@@ -34,5 +32,9 @@
     "path": "^0.12.7",
     "typescript": "^5.2.2",
     "vite": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vecold/react-stmop"
   }
 }
