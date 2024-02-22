@@ -3,7 +3,7 @@
  */
 import { useCallback, useEffect, useRef } from "react";
 import { throttle } from "lodash";
-import { send, subscribe, unsubscribe, initWebSocketUrl } from "./stompClient";
+import { send, subscribe, unsubscribe, initWebSocketUrl } from ".";
 
 interface IProps<T> {
   onReceiveMessage: (value: T) => void;

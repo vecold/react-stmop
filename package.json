@@ -1,16 +1,17 @@
 {
   "name": "react-websocket-stomp",
   "public": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "license": "MIT",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

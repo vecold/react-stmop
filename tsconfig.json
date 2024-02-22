@@ -6,20 +6,23 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Bundler mode  "noEmit": true, */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
+    "declaration": true, // 自动生成声明文件
+    "declarationDir": "dist" // 声明文件生成的目录
   },
-  "include": ["src"],
+  "include": ["src/index.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
